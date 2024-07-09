@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPR Buddy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h1>CPR Buddy</h1>
+            <div id="timer" class="timer">00:00</div>
+            <div class="progress-text">Rhythmuskontrolle</div>
+            <div class="progress-bar-container">
+                <div id="rhythm-control-bar" class="progress-bar"></div>
+            </div>
+            <div class="progress-text">Adrenalingabe</div>
+            <div class="progress-bar-container">
+                <div id="adrenaline-bar" class="progress-bar green"></div>
+            </div>
+            <div class="button-container">
+                <div class="button-grid">
+                    <button id="start-button" class="start-button">Start</button>
+                    <div class="right-column">
+                        <button id="defibrillation-button" class="other-buttons defibrillation-button">Defibrillation</button>
+                        <button id="adrenalin-button" class="other-buttons adrenalin-button">Adrenalin</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <button id="metronome-button" class="metronome-button metronome-on">Metronom Aus</button>
+                    <button id="end-button" class="end-button">Ende</button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>4H</th>
+                            <th>HITS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hypoxie</td>
+                            <td>Herzbeuteltamponade</td>
+                        </tr>
+                        <tr>
+                            <td>Hypovolämie</td>
+                            <td>Intoxikation</td>
+                        </tr>
+                        <tr>
+                            <td>Hypo-/Hyperkaliämie</td>
+                            <td>Thromboembolie</td>
+                        </tr>
+                        <tr>
+                            <td>Hypothermie</td>
+                            <td>Spannungspneumothorax</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button id="reset-button" class="reset-button">Reset</button>
+        </header>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

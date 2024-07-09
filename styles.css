@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.app-header {
+    padding: 20px;
+}
+
+.timer {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.progress-text {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.progress-bar-container {
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px auto;
+    width: 80%;
+    height: 20px;
+}
+
+.progress-bar {
+    background-color: red;
+    height: 100%;
+    width: 0%; /* Ensure progress bar is not filled on start */
+    transition: width 1s linear;
+}
+
+.progress-bar.green {
+    background-color: green;
+    width: 0%; /* Ensure progress bar is not filled on start */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button {
+    background-color: #FF4500;
+    color: white;
+}
+
+.other-buttons {
+    background-color: #007bff;
+    color: white;
+}
+
+.metronome-button.metronome-on {
+    background-color: green;
+}
+
+.metronome-button.metronome-off {
+    background-color: gray;
+}
+
+.end-button {
+    background-color: #FF4500;
+    color: white;
+}
+
+.reset-button {
+    background-color: red;
+    color: white;
+    margin-top: 20px;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #555;
+}
+
+.table th {
+    background-color: #444;
+}
+
+.table td {
+    background-color: #555;
+}
+
+/* Neue Animation für Button-Klick */
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:active {
+    animation: click-animation 0.2s ease;
+}
